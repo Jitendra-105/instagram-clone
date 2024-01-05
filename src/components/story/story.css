@@ -1,0 +1,14 @@
+.stories {
+  text-align: center;
+}
+.stories img {
+    width: 7vh; /* to make a circle always give same unit to height and width*/
+    height: 7vh;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+} 
+
+@media screen and (max-width: 431px) {
+  
+}

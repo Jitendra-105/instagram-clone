@@ -1,0 +1,74 @@
+.logo {
+    margin: 0rem 3rem 3.5rem 3rem;
+    font-size: 1.2rem;
+}
+.logo-icon {
+   margin: 0 1rem; 
+}
+.sidebar {
+    height: 100vh;
+    margin-top: 4rem;
+}
+.other-pages a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.log-btn {
+    border: none;
+    background-color: rgb(43, 42, 42);
+    color: white;
+    padding: .7rem 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+}
+.log-btn:hover {
+    background-color: rgb(231, 224, 224);
+    color: black;
+}
+
+/* <--------------------------------------------------------------------- mobile screens ----------------------------------------------------> */
+
+@media screen and (max-width: 431px) {
+    .sidebar {
+        height: auto;
+        border: 1px solid black;
+        width: 100% !important;
+        margin-top: 0;
+        z-index: 1;
+        background-color: black;
+        color: white;
+    }
+    .other-pages {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: .5rem;
+      position: fixed;
+      bottom: 0;
+      background-color: black;
+      width: 100%;
+      min-height: 8vh;
+    }
+    .other-pages a {
+      color: white;
+      margin-right: .6rem;
+    }
+    .logo {
+        margin: 0;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-icon {
+        margin: 0;
+    }
+    .other-pages span {
+        display: none;
+    }
+    .log-btn {
+        font-size: .6rem;
+        padding: .4rem 1rem;
+    }
+}

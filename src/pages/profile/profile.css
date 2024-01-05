@@ -1,0 +1,119 @@
+.profile-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+    margin-left: 10rem;
+}
+.profile-image-style {
+    width: 20vh;
+    height: 20vh;
+    object-fit: fill;
+    border-radius: 50%;
+}
+.profile-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.profile-top-details ul, .profile-followers-details ul, .profile-bottom-details ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+.profile-highlights {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.profile-highlight-icon {
+    font-size: 6rem;
+}
+.profile-posted-icons {
+    margin-right: 3rem;
+}
+.profile-posted-icons span{
+    margin-right: 1rem;
+}
+.profile-posts-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.profile-posted-photos img {
+    width: 45vh;
+    height: 45vh;
+    margin: .1rem;
+    object-fit: fill;
+    box-shadow: 5px 5px 10px rgba(155, 153, 153, 0.3);
+}
+.edit-profile-btn {
+    border: none;
+    background-color: orangered;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: .6rem;
+}
+.edit-profile-btn:hover {
+    background-color: rgb(255, 91, 32);
+    color: white;
+}
+.archives-btn {
+    border: none;
+    background-color: rgba(255, 166, 0, 0.919);
+    color: white;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: .6rem;
+}
+/* <---------------------------------------------------- mobile screens -------------------------------------------- */
+@media screen and (max-width: 431px) {
+    .main-content {
+        padding: 0px;
+    }
+    .profile-header {
+        margin-left: 0rem;
+    }
+    .profile-image-style {
+        width: 10vh;
+        height: 10vh;
+    }
+    .profile-highlight-icon {
+        font-size: 2rem;
+    }
+    .profile-highlight-icon span{
+        font-size: .8rem;
+    }
+    .profile-posted-icons {
+        margin-right: 2rem;
+    }
+    .profile-posts-container {
+        display: black;
+    }
+    .profile-posted-photos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .profile-posted-photos img {
+        width: 40vh;
+        height: 45vh;
+        margin-top: .2rem;
+        object-fit: fill;
+        box-shadow: 5px 5px 10px rgba(155, 153, 153, 0.3);
+    }
+    .profile-top-details ul, .profile-followers-details ul, .profile-bottom-details ul {
+        gap: .3rem;
+    }
+    .profile-name {
+        font-size: .8rem;
+    }
+}

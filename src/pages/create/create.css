@@ -1,0 +1,17 @@
+.post-btn {
+    margin-right: 3rem;
+    border: none;
+    background-color: rgb(255, 68, 0);
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 6px;
+}
+.caption {
+    outline: none;
+    height: 5vh;
+    width: 60%;
+    border: none;
+    border-bottom: 1px solid lightgray;
+}.upload-form {
+    margin: 2rem 0 2rem 1rem
+}
