@@ -12,7 +12,7 @@ const stories = [
     {
         id: "1",
         img: one,
-        pname: "hero",
+        pname: "erik",
     },
     {
         id: "2",
