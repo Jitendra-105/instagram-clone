@@ -6,6 +6,7 @@
    margin: 0 1rem; 
 }
 .sidebar {
+    background: linear-gradient(red, orange);
     width: 20%;
     height: 100vh;
     margin-top: 4rem;
