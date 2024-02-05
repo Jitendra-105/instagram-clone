@@ -71,9 +71,32 @@
 .reels-comment {
     font-size: 1rem;
 }
+@media screen and (max-width: 1025px){
+    .video-container {
+        width: 100%;
+       
+    }
+    .reels-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .reels-icons-container {
+        display: flex;
+        flex-direction: row;
+        gap: 7rem;
+    }
+}
 
 /* ------------------------------------------------------------------- moblie screen ------------------------------------------------------- */
-@media screen and (max-width: 431px){
+@media screen and (max-width: 541px){
+    .ham-menu {
+        font-size: 1.5rem;
+        left: .8rem;
+        top: 1rem;
+    }
     .video-container {
         width: 100%;
         height: 70vh;
@@ -85,6 +108,16 @@
         width: 100%;
         height: 80%;
     }
+    .reels-container {
+        width: 76%;
+        margin: 0 auto;
+    }
+    .reels-icons-container {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        margin-bottom: 1rem;
+    }
     .reels-details-container {
         display: flex;
         justify-content: flex-start;
@@ -93,7 +126,6 @@
         position: absolute;
         bottom: 1rem;
         font-weight: 500;
-        margin-left: 1rem;
     }
     .reels-icons-container {
         margin: auto .3rem;

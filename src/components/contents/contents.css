@@ -1,3 +1,7 @@
+.main-content {
+    width: 80%;
+    padding: 20px;
+  }
 .contents-container {
     border-bottom: 1px solid lightgray;
     margin-bottom: .3rem;
@@ -26,6 +30,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.likeBtn {
+    font-size: 1.6rem;
 }
 .left-icons span{
     font-size: 1.1rem;
@@ -63,21 +70,32 @@
     height: 62vh;
 }
 
-/* <-------------------------------------- mobile screen------------------------------------------------------------------------->*/
 
-@media screen and (max-width: 431px) {
+@media screen and (max-width: 1025px) {
     .main-content {
-        width: 100%;
+        width: 66%;
         padding: 20px;
-        border: 1px solid black;
     }
     .column-container {
         width: 100%;
     }
     .main-contents-container {
+        width: 96%;
+        margin: 0 auto;
+    }
+}
+
+/* <-------------------------------------- mobile screen------------------------------------------------------------------------->*/
+
+@media screen and (max-width: 541px) {
+    .main-content {
+        width: 100%;
+        padding: 20px;
+    }
+    .column-container {
         width: 100%;
     }
-    .upload-form{
+    .main-contents-container {
         width: 100%;
     }
     .post-btn {

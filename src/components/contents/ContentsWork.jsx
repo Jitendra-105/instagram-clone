@@ -60,7 +60,7 @@ const ContentsWork = (props) => {
       <div className="contents-icons">
         <div className="left-icons">
           <span>
-            {like ? <FcLike /> : <CiHeart />}
+            {like ? <FcLike  className="likeBtn"/> : <CiHeart className="likeBtn"/>}
           </span>
           <span>
             <FaRegCommentAlt />

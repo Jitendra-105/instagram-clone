@@ -11,10 +11,10 @@ import { Link } from 'react-router-dom';
 import './sidebar.css'
 
 
-const Sidebar = () => {
+const Sidebar = (prop) => {
   const { loginWithRedirect, logout, isAuthenticated  } = useAuth0();
   return (
-   <div className="sidebar">
+   <div className="sidebar" style={{display: prop.showNavbar}}>
    <div className="logo">Instagram</div>
    <div className="other-pages"> 
    <Link to="home"><div className="home logo">< FaHome className='logo-icon'/> <span>Home</span></div></Link>

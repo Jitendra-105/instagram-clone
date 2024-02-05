@@ -42,11 +42,8 @@ const Profile = ({posts}) => {
       <div className="profile-header">
         <div className="profile-details-container">
           <div className="profile-top-details">
-            <ul>
-              <li>
                 <img src={image} alt="" className="profile-image-style" />
-              </li>
-              <li className="profile-name">Hrithik Roshan</li>
+             <h4>Hrithik Roshan</h4>
               <li style={{display: "none"}}>
                 {" "}
                 <input
@@ -56,16 +53,13 @@ const Profile = ({posts}) => {
                   ref={inputRef}
                 />
               </li>
-              <li>
+              <div className="profile-buttons">
                 <button onClick={handleClick} className="edit-profile-btn">Edit profile</button>
-              </li>
-              <li>
                 <button className="archives-btn">View Archives</button>
-              </li>
-              <li>
-                <IoMdSettings />
-              </li>
-            </ul>
+              </div>
+            <div className="setting-btn">
+            <IoMdSettings />
+              </div> 
           </div>
           <div className="profile-followers-details">
             <ul>

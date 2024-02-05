@@ -16,7 +16,7 @@ const Home = () => {
             <MainStory />
           </div>
           <div className="main-contents-container">
-            <Create />
+             <Create />
             <Contents />
           </div>
         </div>

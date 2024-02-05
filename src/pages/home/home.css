@@ -22,13 +22,27 @@
     margin: 0 auto;
 }
 
- /* <--------------------------------------------------------------------- mobile screens ----------------------------------------------------> */
 
-@media screen and (max-width: 431px) {
+@media screen and (max-width: 1025px) {
+    .main-story-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
     .main-suggestion-container {
         display: none;
     }
-    .main-story-container {
-        flex-wrap: wrap;
-    }
+}
+
+ /* <--------------------------------------------------------------------- mobile screens ----------------------------------------------------> */
+
+@media screen and (max-width: 541px) {
+    /* .main-story-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    } */
+    /* .main-suggestion-container {
+        display: none;
+    } */
 }
