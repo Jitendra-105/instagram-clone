@@ -11,7 +11,7 @@ import { MdOutlineEmojiEmotions } from "react-icons/md";
 
 
 const ContentsWork = (props) => {
-  const isVideo = props.url.endsWith(".mp4"); // endsWith is a string (js) method which checks whether a string ends with a specified sequence of characters. 
+  const isVideo = props.url.endsWith(".mp4");
 
   // To like and dislike
   const [like, setLike] = useState(false)
@@ -31,7 +31,7 @@ const ContentsWork = (props) => {
     if (comment.trim() !== "") {
       setComments((prevComments) => [...prevComments, comment]);
       setCommentCount((prevComment) => prevComment + 1)
-      setComment(""); // Clear the input field after posting a comment
+      setComment(""); 
     }
   };
 

@@ -8,13 +8,16 @@ import { FaRegHeart } from "react-icons/fa";
 import { FaRegCircle } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
+
+
 import './sidebar.css'
 
 
-const Sidebar = (prop) => {
+const Sidebar = ({ showNavbar }) => {
   const { loginWithRedirect, logout, isAuthenticated  } = useAuth0();
   return (
-   <div className="sidebar" style={{display: prop.showNavbar}}>
+    <>
+   <div className={showNavbar ? 'active' : 'sidebar'}>
    <div className="logo">Instagram</div>
    <div className="other-pages"> 
    <Link to="home"><div className="home logo">< FaHome className='logo-icon'/> <span>Home</span></div></Link>
@@ -31,8 +34,12 @@ const Sidebar = (prop) => {
         }
    </div>
    </div>
+   </>
   )
 
 }
 
 export default Sidebar
+
+
+

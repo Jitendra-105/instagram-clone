@@ -1,16 +1,10 @@
-/* .layout-container {
-    display: flex;
-  } */
 .layout-container {
     display: flex;
     justify-content: center;
   }
   .ham-menu {
-    display: block;
-
+    display: none;
   }
-
-  
 
   @media screen and (max-width:1024px) {
     .ham-menu {
@@ -21,6 +15,22 @@
       position: fixed;
       top: 2;
     }
+    .sidebar {
+      width: 34%;
+      box-shadow: 12px 2px 3px rgb(238, 234, 234);
+      display: none;
+      position: fixed;
+      left: 0;
+      background-color: rgba(255, 255, 255, 0.27);
+  }
+    .active {
+      width: 34%;
+      box-shadow: 2px 2px 3px rgb(238, 234, 234);
+      display: block;
+      position: fixed;
+      left: 0;
+      background-color: rgba(255, 255, 255, 0.27);
+  }
   }
 
 /* <--------------------------------------------------------------------- mobile screens ----------------------------------------------------> */
@@ -30,6 +40,11 @@
     display: block;
   }
   .ham-menu {
-    display: block;
+    display: none;
   }
+  .sidebar {
+    width: 34%;
+    display: block;
+    background-color: black;
+}
 }
